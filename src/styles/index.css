@@ -509,7 +509,6 @@
 
 .footer {
   background-color: var(--fundo-claro);
-
   padding: 40px 20px;
 }
 
@@ -518,6 +517,7 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
 }
+
 
 .footer-coluna h4 {
   font-size: 16px;
@@ -545,7 +545,7 @@
 }
 
 .footer-coluna.logo img {
-  max-width: 120px;
+  max-width: 300px;
   margin-bottom: 10px;
 }
 

@@ -190,6 +190,7 @@
     }
 
     .btn-open {
+        margin-right: 10px;
         display: flex;
         z-index: 1001;
     }
@@ -267,6 +268,7 @@
 
     .nossa-equipa {
         padding: 40px 10px;
+        width: 100%;
     }
 
     .nossa-equipa h2 {
