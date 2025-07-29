@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+:root{
+  --fundo-pagina: #FFFFFF;
+  --button-principal: #234190; /* Botões principais, links ativos, marcação de menu. */
+  --fundo-claro: #D7E3F7; /* Fundo de seções claras Áreas como "Sobre nós", notícias, formulários. */
+  --titles: #1A2954; /* Títulos */
+  --texto: #121A38; /* TEXTO PADRÃO */
+  --rodape-color: #101D39; /* Rodapés */
+  --color-icon: #121A38; /* CORES PARA ÍCONES */
+  --hover-color-icon: #234190; /* Hover Para ícones */
+  --primary-button: #234190; /* CORES PARA BOTÕES */
+  --secondary-button: #D7E3F7; /* BOTÃO SECUNDÁRIO */
+  --secondary-text-button: #121A38;/* TEXTO PARA O BOTÃO SECUNDÁRIO */
+  --hover-primario: #1A2954; /* COR DO HOVER PRIMARIO */
+  --hover-secundario: #FFFFFF;
+  --border-color: #234190; 
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  background-color: var(--fundo-pagina);
+  color: var(--texto);
+  overflow-x: hidden;
+  margin-top: 100px;
+  height: 100%;
+}
+
+h1, h2, h3{
+  color: var(--titles);
+}
+
+.container{
+  width: 95%;
+  margin: auto;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 78;
+  background-color: var(--fundo-pagina);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+footer{
+  background-color: var(--rodape-color);
+  color: var(--fundo-pagina);
+}
+
+button.primary {
+  background-color: var(--primary-button);
+  color: var(--fundo-pagina);
+}
+
+button.primary:hover {
+  background-color: var(--hover-primario);
+}
+
+button.secondary {
+  background-color: var(--secondary-button);
+  color: var(--texto);
+}
+
+button.secondary:hover {
+  background-color: var(--fundo-pagina);
+  border: 1px solid var(--border-color);
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .logo img{
+  max-width: 150px;
+}
+
+header .container nav ul{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header .container nav ul li a {
+  padding-bottom: 5px;
+  position: relative;
+  font-size: 20px;
+  color: var(--texto);
+  font-weight: 530;
+  text-decoration: none;
+}
+
+header .container nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--border-color);
+  transition: 0.3s ease-in-out;
+}
+
+header .container nav ul li a.active::after {
+  width: 100%;
+}
+
+header .container nav ul li a:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,352 @@
+.btn-close,
+.btn-open {
+    display: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-open:hover,
+.btn-close:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+    .nossa-equipa .card {
+        width: 45%;
+        height: 380px;
+    }
+
+    .slider-img img {
+        height: 500px;
+    }
+
+    .txt_hero {
+        top: 40px;
+        width: 300px;
+        padding: 16px;
+    }
+
+    .txt_hero h2 {
+        font-size: 26px;
+    }
+
+    .txt_hero .desc p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-img img {
+        height: 400px;
+    }
+
+    .txt_hero {
+        top: 140px;
+        left: 10px;
+        width: 90%;
+        padding: 14px;
+        animation: none;
+    }
+
+    .txt_hero h2 {
+        font-size: 24px;
+    }
+
+    .txt_hero .desc p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .msg_presidente .container {
+        flex-direction: column;
+    }
+
+    .msg_presidente .container .img,
+    .msg_presidente .container .mensagem {
+        width: 100%;
+    }
+
+    .msg_presidente .container .mensagem {
+        min-height: 500px;
+        padding: 30px;
+    }
+
+    .msg_presidente .container .mensagem .txt {
+        position: relative;
+    }
+
+    .linha-horizontal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linha-conector-horizontal {
+        width: 2px;
+        height: 30px;
+    }
+
+    .nossa-equipa .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nossa-equipa .card {
+        width: 80%;
+        height: 360px;
+    }
+
+    .nossa-equipa h2 {
+        font-size: 2rem;
+    }
+
+    .nossa-equipa .card .txt h4 {
+        font-size: 1.1rem;
+    }
+
+    .nossa-equipa .card .txt p {
+        font-size: 0.9rem;
+    }
+
+    .doacao .botao {
+        padding: 16px 40px;
+        font-size: 18px;
+    }
+
+    .doacao .conteudo {
+        padding: 0 20px;
+    }
+
+    .doacao .conteudo h2 {
+        font-size: 24px;
+    }
+
+    .sobre-nos-container {
+        padding: 60px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .msg_presidente .container .mensagem .txt {
+        padding: 15px;
+    }
+
+    .msg_presidente .container .mensagem .txt h2 {
+        font-size: 22px;
+    }
+
+    .msg_presidente .container .mensagem .txt p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+}
+
+@media (max-width: 575px) {
+    body {
+        margin-top: 90px;
+    }
+
+    header .container .logo img {
+        max-width: 100px;
+    }
+
+    header .container nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 60%;
+        background-color: var(--fundo-pagina);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        gap: 30px;
+        transition: right 0.4s ease;
+        z-index: 999;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header .container nav ul.active {
+        right: 0;
+    }
+
+    header .container nav ul li {
+        padding: 10px 0;
+        text-align: center;
+        animation: fadeInMenu 0.5s ease forwards;
+    }
+
+    .btn-close {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+        animation: zoomClose 2s alternate infinite;
+    }
+
+    .btn-open {
+        display: flex;
+        z-index: 1001;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+        color: var(--cor-texto);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .slider-img img {
+        height: 500px;
+    }
+
+    .txt_hero {
+        top: 140px;
+        left: 5px;
+        width: 95%;
+        padding: 12px;
+        border-radius: 8px;
+        animation: none;
+    }
+
+    .txt_hero h2 {
+        font-size: 20px;
+    }
+
+    .txt_hero .desc p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .experiencia .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .msg_presidente .container {
+        flex-direction: column;
+    }
+
+    .msg_presidente .container .img {
+        width: 100%;
+    }
+
+    .msg_presidente .container .mensagem {
+        width: 100%;
+    }
+
+    .msg_presidente .container .mensagem .txt {
+        padding: 10px;
+    }
+
+    .msg_presidente .container .mensagem .txt h2 {
+        font-size: 18px;
+    }
+
+    .msg_presidente .container .mensagem .txt p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .sobre-nos-container .titulo {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .sobre-nos-container .subtitulo {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 50px;
+    }
+
+    .nossa-equipa {
+        padding: 40px 10px;
+    }
+
+    .nossa-equipa h2 {
+        font-size: 1.8rem;
+    }
+
+    .nossa-equipa .card {
+        width: 100%;
+        height: 340px;
+    }
+
+    .nossa-equipa .card .txt {
+        padding: 10px;
+    }
+
+    .nossa-equipa .card .txt h4 {
+        font-size: 1rem;
+    }
+
+    .nossa-equipa .card .txt p {
+        font-size: 0.85rem;
+    }
+
+    .nossa-equipa .card .icones {
+        top: 10px;
+        right: 10px;
+        gap: 8px;
+    }
+
+    .nossa-equipa .card .icones svg {
+        padding: 5px;
+    }
+
+
+    .doacao .conteudo h2 {
+        font-size: 20px;
+    }
+
+    .doacao .img .slogan {
+        font-size: 28px;
+        bottom: 2px;
+        right: 2px;
+    }
+
+    .doacao .botao {
+        padding: 12px 20px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .doacao .conteudo {
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .doacao .conteudo h2 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    @keyframes zoomClose {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.1);
+        }
+    }
+
+    @keyframes fadeInMenu {
+        from {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
